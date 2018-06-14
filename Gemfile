@@ -66,3 +66,5 @@ gem 'administrate', '~> 0.10.0'
 gem 'bourbon', '~> 5.0'
 
 gem 'pundit', '~> 1.1'
+
+gem 'twilio', '~> 3.1', '>= 3.1.1'
