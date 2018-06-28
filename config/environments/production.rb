@@ -20,5 +20,7 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
   config.active_record.dump_schema_after_migration = false
+  config.serve_static_assets = true
+  config.assets.digest = true
   config.action_mailer.default_url_options = { :host => 'sample-overtimeapp.herokuapp.com' }
 end
