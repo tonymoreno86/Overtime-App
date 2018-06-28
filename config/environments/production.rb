@@ -6,7 +6,7 @@ Rails.application.configure do
   config.read_encrypted_secrets = true
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
   config.assets.js_compressor = :uglifier
-  config.assets.compile = true
+  config.assets.compile = false
   config.log_level = :debug
   config.log_tags = [ :request_id ]
   config.action_mailer.perform_caching = false
@@ -20,4 +20,5 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
   config.active_record.dump_schema_after_migration = false
+  config.action_mailer.default_url_options = { :host => 'sample-overtimeapp.herokuapp.com' }
 end
